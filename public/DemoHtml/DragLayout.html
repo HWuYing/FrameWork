@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <link rel="stylesheet" href="../stylesheets/include/DragLayout.css"/>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            overflow-x: hidden;
+            font-family: "Open Sans", Arial, Helvetica, Sans-Serif;
+        }
+
+        *:before, *:after {
+            box-sizing: border-box;
+        }
+
+        .test {
+            position: relative;
+            margin: 0px auto;
+        }
+
+        .row:after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        .row > .col2 {
+            float: left;
+            width: 49%;
+            min-height: 1px;
+            margin: 0px 1%;
+        }
+
+        .row > .col:last-child {
+            margin-right: 0px;
+        }
+
+        .row > .col:first-child {
+            margin-left: 0px;
+        }
+    </style>
+</head>
+<body>
+<button id="add-layout">添加</button>
+<div class="test">
+    <div class="row">
+        <argicle>
+            <div data-drag="layout" data-drag-key="header--1">
+                <header data-layout="head">
+                    <div class="jarviswidget-ctrls" data-drag-head="no-move">
+                        <a href="javascript:void(0)" data-original-title="Collapse"><i class="iconfont">&#xe602;</i></a>
+                        <a href="javascript:void(0)" data-original-title="Fullscreen"><i class="iconfont">
+                            &#xe603;</i></a>
+                        <a href="javascript:void(0)" data-original-title="Test"><i class="iconfont">Test</i></a>
+                    </div>
+                    <span class="widget">
+                        <i class="iconfont">&#xe606;</i>
+                    </span>
+
+                    <h2>header--1</h2>
+                </header>
+                <div data-layout="content">
+                    <div class="row">
+                        <argicle class="col col2"></argicle>
+                        <argicle class="col col2"></argicle>
+                    </div>
+                </div>
+            </div>
+        </argicle>
+    </div>
+    <div class="row">
+        <argicle class="col2 col">
+            <div data-drag="layout">
+                <header data-layout="head">
+                    <div class="jarviswidget-ctrls" data-drag-head="no-move">
+                        <a href="javascript:void(0)" data-original-title="Fullscreen"><i class="iconfont">
+                            &#xe603;</i></a>
+                    </div>
+                    <span class="widget">
+                        <i class="iconfont">&#xe605;</i>
+                    </span>
+
+                    <h2>header--2</h2>
+                </header>
+                <div data-layout="content"></div>
+            </div>
+        </argicle>
+        <argicle class="col2 col">
+            <div data-drag="layout" data-drag-key="header--3">
+                <header data-layout="head">
+                    <div class="jarviswidget-ctrls" data-drag-head="no-move">
+                        <a href="javascript:void(0)"><i class="iconfont">&#xe600;</i></a>
+                        <a href="javascript:void(0)" data-original-title="Fullscreen"><i class="iconfont">
+                            &#xe603;</i></a>
+                    </div>
+                    <span class="widget">
+                        <i class="iconfont">&#xe607;</i>
+                    </span>
+
+                    <h2>header--3</h2>
+                </header>
+                <div data-layout="content"></div>
+            </div>
+        </argicle>
+    </div>
+    <div class="row">
+        <argicle>
+            <div data-drag="layout" data-drag-key="header--4">
+                <header data-layout="head">
+                    <div class="jarviswidget-ctrls" data-drag-head="no-move">
+                        <a href="javascript:void(0)"><i class="iconfont">&#xe600;</i></a>
+                        <a href="javascript:void(0)" data-original-title="Collapse"><i class="iconfont">&#xe602;</i></a>
+                        <a href="javascript:void(0)" data-original-title="Fullscreen"><i class="iconfont">
+                            &#xe603;</i></a>
+                        <a href="javascript:void(0)" data-original-title="Delete"><i class="iconfont">&#xe604;</i></a>
+                    </div>
+                    <span class="widget">
+                        <i class="iconfont">&#xe601;</i>
+                    </span>
+
+                    <h2>header--4</h2>
+                </header>
+                <div data-layout="content">
+
+                </div>
+            </div>
+        </argicle>
+    </div>
+</div>
+<script type="text/plain" id="text-layout">
+    <div data-drag="layout">
+                <header data-layout="head">
+                    <div class="jarviswidget-ctrls" data-drag-head="no-move">
+                        <a href="javascript:void(0)" data-original-title="Collapse"><i class="iconfont">&#xe602;</i></a>
+                        <a href="javascript:void(0)" data-original-title="Fullscreen"><i class="iconfont">
+                            &#xe603;</i></a>
+                        <a href="javascript:void(0)" data-original-title="Test"><i class="iconfont">Test</i></a>
+                        <a href="javascript:void(0)" data-original-title="Delete"><i class="iconfont">&#xe604;</i></a>
+                    </div>
+                    <span class="widget">
+                        <i class="iconfont">&#xe606;</i>
+                    </span>
+                    <h2>header-Test</h2>
+                </header>
+                <div data-layout="content">
+                    <div class="row">
+                        <argicle class="col col2"></argicle>
+                        <argicle class="col col2"></argicle>
+                    </div>
+                </div>
+            </div>
+
+</script>
+<script src="../javascripts/app.js" id="app"></script>
+<script src="../javascripts/entrance/DragLayout.js"></script>
+</body>
+</html>

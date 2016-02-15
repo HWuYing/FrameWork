@@ -1,0 +1,239 @@
+@import url('../iconfont/iconfont.css');
+.page-index {
+    height: 100%;
+    background-color: #ececec;
+}
+
+header {
+    height: 50px;
+    background-color: #4d7496;
+}
+.logo{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    border-right: 1px solid #3d5c78;
+    width: 239px;
+}
+aside {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    width: 241px;
+    z-index: 99;
+}
+
+.main {
+    margin: 10px 0px 0px  251px;
+    height: -moz-calc(100% - 101px);
+    height:calc(100% - 101px);
+}
+
+aside {
+    width: 240px;
+    border-width: 1px 1px 1px 0px;
+    border-style: solid;
+    border-color: #d1d1d1;
+    background-color: #f9f9f9;
+    height: -moz-calc(100% - 62px);
+    height:calc(100% - 62px);
+}
+
+.cst-scrollbar::-webkit-scrollbar {
+    width: 4px;
+}
+.cst-scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(0,0,0,.2);
+}
+.cst-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+.nav{
+    height: -moz-calc(100% - 158px);
+    height:calc(100% - 158px);
+    overflow: auto;
+}
+.expand .user {
+    margin: 17px 17px 0px 17px;
+}
+
+.expand .user-info:after {
+    content: ' ';
+    display: table;
+    clear: both;
+}
+
+.expand .user-title {
+    display: inline-block;
+    border: 7px solid #ececec;
+    border-radius: 50%;
+    width: 76px;
+    height: 76px;
+    vertical-align: middle;
+}
+
+.user-desc {
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+    color: #898989;
+}
+
+.user-desc > li.user-name {
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.expand .search {
+    position: relative;
+    margin: 0px 17px 17px 17px;
+    height: 31px;
+}
+
+.expand .search > button {
+    background: none;
+    border: none;
+    outline: none;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+    color: #999;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.expand .search > button:hover {
+    color: #666;
+}
+
+.expand .search > input {
+    width: 100%;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: #d9d9d9;
+    background: none;
+    line-height: 30px;
+    outline: none;
+    color: #999;
+}
+.nav{
+
+}
+.nav > ul > li ul {
+    position: relative;
+    display: none;
+}
+
+.nav > ul li.open > ul {
+    display: block;
+}
+
+.nav > ul li {
+    position: relative;
+}
+
+.nav > ul > li {
+    border-width: 1px 0px 0px 0px;
+    border-style: solid;
+    border-color: #eee transparent #ddd transparent;
+    background-color: #f9f9f9;
+}
+
+.nav > ul > li > ul:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 1px;
+    top: 0px;
+    bottom: 0px;
+    background-color: #999;
+    left: 28px;
+    z-index: 1;
+}
+
+.nav > ul ul > li:before {
+    content: ' ';
+    position: absolute;
+    left: 29px;
+    width: 7px;
+    height: 1px;
+    top: 20px;
+    z-index: 1;
+    background-color: #999;
+}
+
+.nav ul li a {
+    position: relative;
+    line-height: normal;
+    display: block;
+    padding: 12px 19px;
+    text-decoration: none;
+    font-size: 12px;
+    color: #8a8a8a;
+}
+
+.nav ul li a i.iconfont {
+    font-size: 18px;
+    margin-right: 5px;
+    color: #6b6b6b;
+}
+
+.nav ul li a b.iconfont {
+    position: absolute;
+    top: 17px;
+    right: 10px;
+    color: #8a8a8a;
+}
+
+.nav ul li a:hover b.iconfont{
+    color: #aaa;
+}
+
+.nav > ul > li > ul > li a {
+    font-size: 12px;
+}
+
+.nav > ul > li > ul > li > a {
+    padding-left: 43px;
+}
+
+.nav > ul > li > ul > li > ul > li > a {
+    padding-left: 70px;
+}
+
+.nav > ul > li.open ul {
+    background-color: #fbfbfb;
+}
+
+.nav ul li.active > a {
+    border-right: 3px solid #668eb0;
+    background-color: #fff;
+}
+
+.nav > ul > li.open > a {
+    background-color: #f7f7f7;
+}
+
+.nav ul li > a:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.page-title{
+    height: 30px;
+    line-height: 28px;
+    border: 1px solid #d1d1d1;
+    padding-left: 20px;
+    border-right: 0px;
+    background-color: #f9f9f9;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.page-title i.iconfont{
+    font-size: 20px;
+    margin-right: 5px;
+    color: #777;
+}
